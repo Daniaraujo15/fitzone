@@ -1,0 +1,739 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh; /*ocupa toda la altura*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;/*para que el footer esté al final*/
+    background-image: url(../imginicio1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Libre Franklin", sans-serif;
+}
+header{
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-family: "Monoton", sans-serif;
+    margin: 20px;
+    font-size: 2.5em;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 20px;
+}
+.nav-list li a:hover{
+    text-decoration:  overline; /*subraya el enlace al pasar el cursor*/
+}
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+.bienvenido{
+    background: rgba(255, 255, 255, 0.3); /*fondo semitransparente*/
+    border-radius: 10px;
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+}
+.bienvenido h2{
+    color: white;
+    font-size: 3em;
+    padding-top: 30px;
+}
+.bienvenido p{
+    font-size: 1.5em;
+    color: white;
+    padding-top: 30px;
+}
+.button{
+    height: 50px;
+    width: 150px;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 18px;
+}
+.button:hover{
+    transform: scale(1.1); /*aumnenta el tamaño del boton al pasar el cursor*/
+    transition: 1s; /*transición suave*/
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 3em;
+    cursor: pointer;
+    padding-top: 200px;
+    padding-bottom: 10px;
+}
+footer i:hover{
+    transform: scale(1.2); /*aumenta el tamaño de los iconos al pasar el cursor*/
+}
+
+/*PESTAÑA ACTIVIDADES*/
+.actividad{ /*body*/ 
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #041785, #3383fc);
+    font-family: "Libre Franklin", sans-serif;
+}
+.actividades{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.actividades h1{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Libre Franklin", sans-serif;
+}
+.actividades ul{
+    background: rgba(255, 255, 255, 0.3); 
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+.actividades li{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.actividades img{
+    width: 100%;/*para mejor responsividad*/
+    max-width: 400px;/*mantiene el tamaño máximo*/
+    height: auto;/*mantiene la relación de aspecto*/
+    border-radius: 15px;
+    margin: 20px;
+}
+.actividades nav img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.actividades h2{
+   color:  rgb(4, 18, 153);
+   font-size: 1.2em;
+}
+.actividades p{
+    color: white;
+    margin: 20px;
+    font-size: 1.5em;
+    font-weight: 450;
+}
+.actividades li a{
+    color: #030163;
+    text-decoration: none;
+    font-size: 2.2em;
+}
+
+
+/*PESTAÑA SOBRE NOSOTROS*/
+.nosotros{/*body*/
+    min-height: 100vh;
+    background-image: linear-gradient(to left, #9f38b9, #e6b2f3);
+    font-family: "Libre Franklin", sans-serif;
+    overflow-x: hidden;/*elimina el scroll horizontal*/
+}
+.nosotros2{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.img1{
+    height: 800px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.img1 img,
+.img2 img,
+.img3 img{
+    height: 500px;
+    width: 750px;
+    border-radius: 20px;
+}
+.nosotros2 img:hover{
+    cursor: pointer;
+    transform: translate(0, -50px); /*mueve la imagen 50px hacia arriba cuando se pasa el cursor sobre ella*/
+    transition: 1s;
+}
+.img1 h2,
+.img2 h2,
+.img3 h2{
+    padding-top: 20px;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+.img1 p{
+    color: white;
+    font-size: 2em;
+    margin-top: 20px; /*separa el parráfo del subtítulo*/
+    padding-bottom: 50px;
+}
+.container1,
+.container2{
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+.container1 h2,
+.container2 h2{
+    color: black;
+    font-size: 2em;
+    padding-top: 50px;
+}
+.container1 p{
+    color: black;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+.container1 h3{
+    font-size: 1.2em;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.img2{
+    min-height: 900px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    background-image: linear-gradient(to right, #4169e1, #87cefa);
+}
+.img2 h3{
+    color: white;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+.img2 p{
+    color: white;
+    font-size: 1.3em;
+    margin: 0;
+    padding-top: 30px;
+    height: 300px;
+    width: 500px;/*limita el espacio para el texto*/
+    text-align: start;
+}
+.ultima{
+    padding-bottom: 50px;/*agrega espacio inferior de este elemento*/
+}
+.container2 h2{
+    color: black;
+    font-size: 2.5em;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.img3{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    padding-top: 50px;
+    background-image: linear-gradient(to left, #b32774, #f091b1);
+}
+.contenido{/*contenido en columnas*/
+    display: flex; 
+    flex-direction: row;/*elementos en linea*/
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+    flex-wrap: wrap;/*elementos se mueven a la siguiente linea al no haber espacio*/
+}
+.contenido h2{
+    padding-bottom: 20px;
+}
+.contenido p{
+    font-size: 1.2em;
+}
+.proposito,
+.mision,
+.valores{
+    height: auto;
+    width: 90%;
+    max-width: 300px;/*limita el ancho máximo*/
+    margin: 50px;
+    color: white;
+}
+
+/*PESTAÑA GALERIA*/
+.galeria{/*body*/
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #46038a, #9370db);
+}    
+.titulo-galeria{
+    display: block;
+    justify-content: start;
+    align-items: center;
+}
+.titulo-galeria h2{
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 50px;
+}
+.contenedor-galeria{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galeria-img{
+    width: 900px;
+    display: grid;/*diseño en cuadrículas*/
+    grid-template-columns: repeat(3,auto);
+    gap: 10px;/*espacio entre columnas y filas*/
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.galeria-img a,
+.galeria-img img{
+    display: block;/*elementos bloque, ocupan todo el ancho*/
+    width: 100%;
+    height: 250px;/*para que todas las img tengan la misma altura*/
+}
+.galeria-img img:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);/*agrega sombra a la imagen al pasar el cursor sobre ella*/
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);/*fondo semitransparente negro*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+}   
+.visible{
+    display: flex;/*muestra la modal*/
+}
+.modal button{
+    font-size: 3em;
+    display: block;
+    margin: 0 20px;
+    background-color: transparent;
+    border: none;
+    color: white
+} 
+img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 550px){
+     .abrir-menu,
+     .cerrar-menu{  /*emoticonos clicables estilizados*/
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: white;
+        margin-right: 20px;
+     }
+     .abrir-menu:hover{
+        transform: scale(1.1);
+     }
+     .cerrar-menu:hover{
+        transform: scale(1.1);
+     }
+     .nav{
+        opacity: 0;
+        visibility: hidden; /*oculta el elemento*/
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 20px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);/*sombra que cubre el área y da efecto de superposición*/
+     }
+     .nav-list{
+        flex-direction: column;
+        align-items: flex-end;
+     }
+     .nav-list li{
+        margin: 20px;
+     }
+     .nav-list a{
+        color: white;
+     }
+     .nav.visible{
+        visibility: visible;
+        opacity: 1;
+     }
+     .bienvenido{
+        width: 90%;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 20px;
+     }
+     .bienvenido h2{
+        font-size: 2em;
+     }
+     footer{
+        padding-top: 171px;
+        padding-bottom: 10px;
+        font-size: 2em;
+     }
+
+     /*PESTAÑA ACTIVIDADES*/
+     .actividades{
+       padding-top: 5px;
+     }
+     .actividades li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+     }
+     .actividades h1{
+        padding-top: 5px;
+        font-size: 2em;
+     }
+     .actividades img{
+        margin: auto;
+        height: auto;
+     }
+     .container{
+        margin-top: 20px;
+        padding: 0 15px;
+     }
+
+     /* PESTAÑA NOSOTROS*/
+     .img1,
+     .img2,
+     .img3{
+        display: block;
+        height: auto;/*la altura se ajusta automáticamente según el contenido*/
+        padding-top: 30px;
+     }
+     .img1 img,
+     .img2 img,
+     .img3 img{
+        height: auto;/*hace que las imagenes sean flexibles*/
+        width: 90%;
+        max-width: 500px;/*limite del ancho máximo*/
+        margin-right: 20px;
+     }
+     .img1 h2,
+     .img2 h2,
+     .img3 h2{
+        font-size: 2em;/*letras más pequeñas*/
+        width: 90%;
+        text-align: center;
+        margin: auto;
+     }
+     .img1 h2{
+        padding-bottom: 20px;
+     }
+     .img2 h3{
+        font-size: 1.2em;
+        width: 90%;
+        margin: auto;
+     }
+     .img2 p{
+        height: auto;
+     }
+     .nosotros p{
+        font-size: 1.3em;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+     }
+     .container1 h2,
+     .container2 h2{
+        font-size: 1.7em;
+     }
+     .contenido{
+        flex-direction: column;/*cambia a columnas*/
+        width: 100%;
+     }
+     .contenido h2{
+        text-align: center;
+     }
+     .contenido p{
+        font-size: 1.2em;
+     }
+     .proposito,
+     .mision,
+     .valores{
+        margin: 10px;
+        height: auto;
+        width: 100%;
+     }
+
+     /*PESTAÑA GALERIA*/
+     .titulo-galeria h2{
+        font-size: 1.7em;
+        padding-top: 50px;
+        text-align: center;
+        color: white;
+     }
+     .contenedor-galeria{
+        padding-top: 50px;
+     }
+     .galeria-img{
+        width: 100%; 
+        margin-left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /*cambia a una columna*/
+     }
+     img{
+        max-width: 80%;
+        max-height: 90%;
+        border-radius: 20px;
+     }
+     .modal button{
+        font-size: 1.5em; /*iconos más pequeños*/
+     }
+     
+}   
+
+@media screen and (max-width: 950px){
+    .nav-list li{
+        display: block;
+    }
+    .bienvenido{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer{
+        padding-bottom: 30px;
+    }
+    /*PESTAÑA ACTIVIDADES*/
+    .actividades li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+     }
+     .actividades h1{
+        padding-top: 10px;
+        font-size: 2em;
+     }
+
+     /*PESTAÑA NOSOTROS*/
+     .nosotros2{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+     }
+     .img1,
+     .img2,
+     .img3{
+        display: block;
+        height: auto;
+        padding-top: 50px;
+        margin: auto;
+     }
+     .img1 img,
+     .img2 img,
+     .img3 img{
+        height: auto;/*hace que las imagenes sean flexibles*/
+        width: 90%;
+        max-width: 500px;/*limite del ancho máximo*/
+     }
+     .img1 h2,
+     .img2 h2,
+     .img3 h2{
+        font-size: 2.5em;/*letras más pequeñas*/
+        width: 90%;
+        text-align: center;
+        margin: 15px;
+     }
+     .img2 p{
+        height: auto;
+     }
+     .nosotros p{
+        font-size: 1.5em;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+     }
+     .container2 h2{
+        font-size: 1.7em;
+     }
+     .contenido{
+        display: flex;
+        flex-direction: column;/*cambia a columnas*/
+        width: 100%;
+     }
+     .contenido h2{
+        padding-top: 20px;
+        text-align: center;
+     }
+     .contenido p{
+        font-size: 1.5em;
+        text-align: center; 
+     }
+     .proposito,
+     .mision,
+     .valores{
+        margin: 10px;
+        height: auto;
+        width: 100%;
+     }
+
+     /*PESTAÑA GALERIA*/
+     .titulo-galeria h2{
+        font-size: 2em;
+        padding-top: 50px;
+     }
+     .contenedor-galeria{
+        padding-top: 80px;
+        margin-left: 80px;
+     }
+     .galeria-img{
+        width: 100%;
+        grid-template-columns: repeat(2, auto);/*cambia a dos columnas*/ 
+     }
+     img{
+        max-width: 80%;
+        max-height: 90%;
+        border-radius: 20px;
+     }
+     .modal button{
+        font-size: 2em;
+     }
+
+}
+
+@media screen and (max-width: 1200px){
+    h1{
+        font-size: 2.2em;
+    }
+    .nav-list li a{
+        font-size: 1.1em;
+        margin: 15px;
+    }
+    .bienvenido{
+        width: 50%;
+        height: auto;/*altura automática para adaptarse al contenido*/
+        margin: 50px auto;/*menos margen superior*/
+    }
+    .bienvenido h2{
+        font-size: 2.5em;
+    }
+    .bienvenido p{
+        font-size: 1.2em;
+    }
+    footer{
+        font-size: 2.5em;
+        padding-top: 150px;
+    }
+
+    /*PESTAÑA NOSOTROS*/
+     .img1 h2,
+     .img2 h2,
+     .img3 h2{
+        font-size: 2em;/*letras más pequeñas*/
+        width: 90%;
+        text-align: center;
+        margin: auto;
+     }
+     .nosotros p{
+        font-size: 1.5em;
+        width: 90%;
+        margin: 5px auto;
+        text-align: center;
+     }
+     .contenido p{
+        font-size: 1.6em;
+        text-align: center; 
+     }
+     .img2 p{
+        height: auto;
+        margin: 2px;
+     }
+
+     .titulo h2{
+        font-size: 2.2em;
+        padding-top: 70px;
+     }
+     .contenedor-galeria{
+        padding-top: 80px;
+        margin-left: 60px;
+     }
+     .img3{
+        height: auto; /*mejor responsividad*/
+     }
+
+}
+
+@media screen and (max-width: 1400px){
+
+}
+
